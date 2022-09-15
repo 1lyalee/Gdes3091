@@ -1,0 +1,21 @@
+
+
+@font-face {
+    font-family: WeddingDream;
+    src:url("Techna-Sans-Regular-2.otf");
+}
+
+
+
+body{
+    margin: auto;
+    width: 70%;
+    font-family: WeddingDream;
+
+}
+
+
+#head{
+
+    width: 100px;
+}
