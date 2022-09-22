@@ -88,7 +88,7 @@
 .letter-a > .serif3:before {
     bottom: 16%;
     left: 0;
-    box-shadow: -10px 20px 0 0 blue;
+    box-shadow: -10px 20px 0 0 black;
 }
 
 .letter-a > .serif2:before,
@@ -1066,6 +1066,528 @@ Letter J */
     left: 0;
     box-shadow: -10px -20px 0 0 black;
 }
+
+
+
+
+
+
+
+/* 
+//////////////////////////////////////////////////////
+
+Letter K */
+
+
+
+
+.letter-k > .stroke {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 18%;
+    width: 10%;
+    height: 84%;
+    background-color: black;
+}
+
+.letter-k > .serif,
+.letter-k > .serif2,
+.letter-k > .serif3,
+.letter-k > .serif4{
+    content: "";
+    left: 8%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-k > .serif {
+    top: 8%;
+}
+
+.letter-k > .serif2 {
+    top: 82%;
+}
+
+.letter-k > .serif3 {
+    top: 82%;
+    left: 23%;
+}
+
+.letter-k > .serif4 {
+    top: 8%;
+    left: 23%;
+}
+
+
+
+.letter-k > .serif:before,
+.letter-k > .serif2:before,
+.letter-k > .serif3:before,
+.letter-k > .serif4:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-k > .serif:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 black;
+}
+.letter-k > .serif2:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 10px 20px 0 0 black;
+}
+.letter-k > .serif3:before {
+    bottom: 16%;
+    left: 0;
+    box-shadow: -10px 20px 0 0 black;
+}
+
+.letter-k > .serif4:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 black;
+}
+
+
+
+.letter-k > .stroke2 {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 72%;
+    width: 10%;
+    height: 84%;
+    background-color: black;
+}
+
+.letter-k > .serif5,
+.letter-k > .serif6,
+.letter-k > .serif7,
+.letter-k > .serif8{
+    content: "";
+    left: 62%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-k > .serif5 {
+    top: 8%;
+}
+
+.letter-k > .serif6 {
+    top: 82%;
+}
+
+.letter-k > .serif7 {
+    top: 82%;
+    left: 77%;
+}
+
+.letter-k > .serif8 {
+    top: 8%;
+    left: 77%;
+}
+
+
+
+.letter-k > .serif5:before,
+.letter-k > .serif6:before,
+.letter-k > .serif7:before,
+.letter-k > .serif8:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-k > .serif5:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 black;
+}
+.letter-k > .serif6:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 10px 20px 0 0 black;
+}
+.letter-k > .serif7:before {
+    bottom: 16%;
+    left: 0;
+    box-shadow: -10px 20px 0 0 black;
+}
+
+.letter-k > .serif8:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 black;
+}
+
+.letter-k > .arm {
+    content: ' ';
+    position: absolute;
+    top: 10%;
+    left: 48%;
+    width: 12%;
+    height: 40%;
+    transform: skew(-50deg);
+    background-color: black;
+}
+
+.letter-k > .arm::after {
+    content: '';
+    position: absolute;
+    left:440%;
+    top: 86%;
+    width: 120%;
+    height: 112%;
+    transform: skew(64deg) scaleY(-1) scaleY(-1);
+    background-color: black;
+}
+
+
+
+
+
+/* 
+///////////////////////////////////////////
+
+Letter T */
+
+
+.letter-t > .stroke {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 42.5%;
+    width: 15%;
+    height: 80%;
+    background-color: black;
+}
+
+.letter-t > .bar {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    width: 80%;
+    height: 6%;
+    background-color: black;
+}
+
+.letter-t > .serif,
+.letter-t > .serif2,
+.letter-t > .serif3,
+.letter-t > .serif4{
+    content: "";
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-t > .serif,
+.letter-t > .serif4{
+    width: 25%;
+    height: 12%;
+    top: 10%;
+}
+
+.letter-t > .serif2,
+.letter-t > .serif3{
+    width: 25%;
+    height: 20%;
+    top: 72%;
+}
+
+.letter-t > .serif {
+    left: 20%;
+}
+
+.letter-t > .serif2 {
+    left: 25%;
+}
+
+.letter-t > .serif3 {
+    left: 50%;
+}
+
+.letter-t > .serif4 {
+    left: 55%;
+}
+
+
+
+.letter-t > .serif:before,
+.letter-t > .serif2:before,
+.letter-t > .serif3:before,
+.letter-t > .serif4:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-t > .serif:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 black;
+}
+.letter-t > .serif2:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 10px 20px 0 0 black;
+}
+.letter-t > .serif3:before {
+    bottom: 16%;
+    left: 0;
+    box-shadow: -10px 20px 0 0 black;
+}
+
+.letter-t > .serif4:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 black;
+}
+
+
+
+
+
+.letter-t > .bar_serif{
+    content: "";
+    top: 10%;
+    left: 65%;
+    width: 25%;
+    height: 12%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.letter-t > .bar_serif:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    right: 16%;
+    box-shadow: 14px -14px 0 0 black;
+}
+
+
+.letter-t > .bar_serif2{
+    content: "";
+    top: 10%;
+    left: 10%;
+    width: 25%;
+    height: 12%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.letter-t > .bar_serif2:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 16%;
+    box-shadow: -14px -14px 0 0 black;
+}
+
+
+
+
+.letter-t > .bling_topleft,
+.letter-t > .bling_topright,
+.letter-t > .bling_botleft,
+.letter-t > .bling_botright{
+    content: "";
+    top: 43%;
+    left: 16%;
+    width: 12%;
+    height: 12%;
+    overflow: hidden;
+    position: absolute;
+    transform: rotate(-20deg);
+}
+
+.letter-t > .bling_botright{
+    top: 40%;
+    left: 26%;
+}
+
+.letter-t > .bling_topleft{
+    top: 32%;
+    left: 12%;
+}
+
+.letter-t > .bling_topright{
+    top: 29%;
+    left: 22%;
+}
+
+
+.letter-t > .bling_topleft:before,
+.letter-t > .bling_topright:before,
+.letter-t > .bling_botleft:before,
+.letter-t > .bling_botright:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.letter-t > .bling_topleft:before {
+    bottom: 0;
+    right: 16%;
+    box-shadow: 14px 14px 0 0 black;
+}
+
+.letter-t > .bling_topright:before {
+    bottom: 0;
+    left: 16%;
+    box-shadow: -14px 14px 0 0 black;
+}
+
+.letter-t > .bling_botleft:before {
+    top: 0;
+    right: 16%;
+    box-shadow: 14px -14px 0 0 black;
+}
+
+.letter-t > .bling_botright:before {
+    top: 0;
+    left: 16%;
+    box-shadow: -14px -14px 0 0 black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.letter-t > .serif,
+.letter-t > .serif2,
+.letter-t > .serif3,
+.letter-t > .serif4{
+    content: "";
+    left: 39%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-t > .serif {
+    left: 28%;
+    top: 8%;
+    width: 25%;
+    height: 20%;
+}
+
+.letter-t > .serif2 {
+    top: 82%;
+}
+
+.letter-t > .serif3 {
+    top: 82%;
+    left: 52%;
+}
+
+.letter-t > .serif4 {
+    top: 8%;
+    left: 54%;
+    width: 25%;
+    height: 20%;
+}
+
+
+
+.letter-t > .serif:before,
+.letter-t > .serif2:before,
+.letter-t > .serif3:before,
+.letter-t > .serif4:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-t > .serif:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 red;
+}
+.letter-t > .serif2:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 10px 20px 0 0 black;
+}
+.letter-t > .serif3:before {
+    bottom: 16%;
+    left: 0;
+    box-shadow: -10px 20px 0 0 black;
+}
+
+.letter-t > .serif4:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 black;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
