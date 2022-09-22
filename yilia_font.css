@@ -1351,12 +1351,12 @@ Letter T */
 .letter-t > .serif2:before {
     bottom: 16%;
     right: 0;
-    box-shadow: 10px 20px 0 0 black;
+    box-shadow: 30px 20px 0 0 black;
 }
 .letter-t > .serif3:before {
     bottom: 16%;
     left: 0;
-    box-shadow: -10px 20px 0 0 black;
+    box-shadow: -30px 20px 0 0 black;
 }
 
 .letter-t > .serif4:before {
