@@ -1,0 +1,246 @@
+
+
+:root {
+    --color: #000;
+
+  }
+
+
+
+
+.letter {
+
+    width: 240px ; /*resize as you see fit */
+    height: 300px ; /*resize as you see fit */
+    display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+    border:1px solid var(--color); /*feel free to remove or hide this rule */
+    position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+    overflow: hidden; 
+}
+
+
+
+
+/* 
+///////////////////////////////////////////
+
+Letter T special */
+
+
+.letter-t_special > .stroke {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 42.5%;
+    width: 15%;
+    height: 80%;
+    background-color: black;
+}
+
+.letter-t_special > .bar {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    width: 80%;
+    height: 6%;
+    background-color: black;
+}
+
+.letter-t_special > .serif,
+.letter-t_special > .serif2,
+.letter-t_special > .serif3,
+.letter-t_special > .serif4{
+    content: "";
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-t_special > .serif,
+.letter-t_special > .serif4{
+    width: 25%;
+    height: 12%;
+    top: 10%;
+}
+
+.letter-t_special > .serif2,
+.letter-t_special > .serif3{
+    width: 25%;
+    height: 20%;
+    top: 72%;
+}
+
+.letter-t_special > .serif {
+    left: 20%;
+}
+
+.letter-t_special > .serif2 {
+    left: 25%;
+}
+
+.letter-t_special > .serif3 {
+    left: 50%;
+}
+
+.letter-t_special > .serif4 {
+    left: 55%;
+}
+
+
+
+.letter-t_special > .serif:before,
+.letter-t_special > .serif2:before,
+.letter-t_special > .serif3:before,
+.letter-t_special > .serif4:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-t_special > .serif:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 black;
+}
+.letter-t_special > .serif2:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 30px 20px 0 0 black;
+}
+.letter-t_special > .serif3:before {
+    bottom: 16%;
+    left: 0;
+    box-shadow: -30px 20px 0 0 black;
+}
+
+.letter-t_special > .serif4:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 black;
+}
+
+
+
+
+
+.letter-t_special > .bar_serif{
+    content: "";
+    top: 10%;
+    left: 65%;
+    width: 25%;
+    height: 12%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.letter-t_special > .bar_serif:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    right: 16%;
+    box-shadow: 14px -14px 0 0 black;
+}
+
+
+.letter-t_special > .bar_serif2{
+    content: "";
+    top: 10%;
+    left: 10%;
+    width: 25%;
+    height: 12%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.letter-t_special > .bar_serif2:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 16%;
+    box-shadow: -14px -14px 0 0 black;
+}
+
+
+
+
+.letter-t_special > .bling_topleft,
+.letter-t_special > .bling_topright,
+.letter-t_special > .bling_botleft,
+.letter-t_special > .bling_botright{
+    content: "";
+    top: 43%;
+    left: 16%;
+    width: 12%;
+    height: 12%;
+    overflow: hidden;
+    position: absolute;
+    transform: rotate(-20deg);
+}
+
+.letter-t_special > .bling_botright{
+    top: 40%;
+    left: 26%;
+}
+
+.letter-t_special > .bling_topleft{
+    top: 32%;
+    left: 12%;
+}
+
+.letter-t_special > .bling_topright{
+    top: 29%;
+    left: 22%;
+}
+
+
+.letter-t_special > .bling_topleft:before,
+.letter-t_special > .bling_topright:before,
+.letter-t_special > .bling_botleft:before,
+.letter-t_special > .bling_botright:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.letter-t_special > .bling_topleft:before {
+    bottom: 0;
+    right: 16%;
+    box-shadow: 14px 14px 0 0 black;
+}
+
+.letter-t_special > .bling_topright:before {
+    bottom: 0;
+    left: 16%;
+    box-shadow: -14px 14px 0 0 black;
+}
+
+.letter-t_special > .bling_botleft:before {
+    top: 0;
+    right: 16%;
+    box-shadow: 14px -14px 0 0 black;
+}
+
+.letter-t_special > .bling_botright:before {
+    top: 0;
+    left: 16%;
+    box-shadow: -14px -14px 0 0 black;
+}
+
+

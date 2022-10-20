@@ -1,12 +1,25 @@
+
+
+:root {
+    --font_color: rgb(235, 179, 36);;
+    --negative_color: rgb(255, 255, 255);
+}
+
+
+
+
 .letter {
 
     width: 240px ; /*resize as you see fit */
     height: 300px ; /*resize as you see fit */
     display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
-    border:1px solid #000; /*feel free to remove or hide this rule */
+    border:1px solid var(--font_color); /*feel free to remove or hide this rule */
     position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
     overflow: hidden; 
+    
 }
+
+
 
 
 /*  Letter A  */ 
@@ -19,7 +32,7 @@
     width: 8%;
     height: 80%;
     transform: skew(-16deg);
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-a > .stroke:before {
@@ -30,7 +43,7 @@
     width: 100%;
     height: 40%;
     transform: skew(32deg) rotate(90deg);
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-a > .stroke:after {
@@ -40,7 +53,7 @@
     width: 40%;
     height: 100%;
     transform: skew(32deg);
-    background-color: red;
+    background-color: var(--font_color);
 }
 
 
@@ -88,14 +101,14 @@
 .letter-a > .serif3:before {
     bottom: 16%;
     left: 0;
-    box-shadow: -10px 20px 0 0 black;
+    box-shadow: -10px 20px 0 0 var(--font_color);
 }
 
 .letter-a > .serif2:before,
 .letter-a > .serif4:before {
     bottom: 16%;
     right: 0;
-    box-shadow: 10px 20px 0 0 black;
+    box-shadow: 10px 20px 0 0 var(--font_color);
 }
 
 
@@ -113,7 +126,7 @@
     left: 18%;
     width: 10%;
     height: 84%;
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-b > .serif,
@@ -148,12 +161,12 @@
 .letter-b > .serif:before{
     top: 16%;
     right: 0;
-    box-shadow: 10px -20px 0 0 black;
+    box-shadow: 10px -20px 0 0 var(--font_color);
 }
 .letter-b > .serif2:before {
     bottom: 16%;
     right: 0;
-    box-shadow: 10px 20px 0 0 black;
+    box-shadow: 10px 20px 0 0 var(--font_color);
 }
 
 
@@ -165,7 +178,7 @@
     left: 26%;
     width: 50%;
     height: 36%;
-    background-color: black;
+    background-color: var(--font_color);
     border-radius: 0px 150px 150px 0px;
 }
 
@@ -177,7 +190,7 @@
     width: 82%;
     height: 90%;
     border-radius: 0px 150px 150px 0px;
-    background-color: white;
+    background-color: var(--negative_color);
 }
 
 .letter-b > .oval2 {
@@ -187,7 +200,7 @@
     left: 26%;
     width: 60%;
     height: 50%;
-    background-color: black;
+    background-color: var(--font_color);
     border-radius: 0px 150px 150px 0px;
 }
 
@@ -199,7 +212,7 @@
     width: 82%;
     height: 90%;
     border-radius: 0px 150px 150px 0px;
-    background-color: white;
+    background-color: var(--negative_color);
 }
 
 
@@ -215,7 +228,7 @@
     left: 10%;
     width: 80%;
     height: 84%;
-    background-color: black;
+    background-color: var(--font_color);
     border-radius: 100px/140px;
 }
 
@@ -224,7 +237,7 @@
     height: 96%;
     content: '';
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--negative_color);
     position: absolute;
     top: 50%;
     left: 46%;
@@ -236,7 +249,7 @@
     height: 60%;
     content: '';
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--negative_color);
     position: absolute;
     top: 50%;
     left: 80%;
@@ -257,7 +270,7 @@
     left: 18%;
     width: 10%;
     height: 84%;
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-d > .serif,
@@ -292,12 +305,12 @@
 .letter-d > .serif:before{
     top: 16%;
     right: 0;
-    box-shadow: 10px -20px 0 0 black;
+    box-shadow: 10px -20px 0 0 var(--font_color);
 }
 .letter-d > .serif2:before {
     bottom: 16%;
     right: 0;
-    box-shadow: 10px 20px 0 0 black;
+    box-shadow: 10px 20px 0 0 var(--font_color);
 }
 
 
@@ -309,7 +322,7 @@
     left: 26%;
     width: 60%;
     height: 84%;
-    background-color: black;
+    background-color: var(--font_color);
     border-radius: 0px 80px 80px 0px;
 }
 
@@ -321,7 +334,7 @@
     width: 78%;
     height: 90%;
     border-radius:0px 70px 70px 0px;
-    background-color: white;
+    background-color: var(--negative_color);
 }
 
   
@@ -338,7 +351,7 @@
     left: 18%;
     width: 10%;
     height: 84%;
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-e > .serif,
@@ -410,35 +423,35 @@
 .letter-e > .serif:before{
     top: 16%;
     right: 0;
-    box-shadow: 10px -20px 0 0 black;
+    box-shadow: 10px -20px 0 0 var(--font_color);
 }
 .letter-e > .serif2:before {
     bottom: 16%;
     right: 0;
-    box-shadow: 10px 20px 0 0 black;
+    box-shadow: 10px 20px 0 0 var(--font_color);
 }
 .letter-e > .arm_serif_bot:before {
     bottom: 0;
     right: 16%;
-    box-shadow: 14px 14px 0 0 black;
+    box-shadow: 14px 14px 0 0 var(--font_color);
 }
 
 .letter-e > .arm_serif_top:before {
     top: 0;
     right: 16%;
-    box-shadow: 14px -14px 0 0 black;
+    box-shadow: 14px -14px 0 0 var(--font_color);
 }
 
 .letter-e > .arm_serif_mid1:before {
     bottom: 0;
     right: 16%;
-    box-shadow: 14px 14px 0 0 black;
+    box-shadow: 14px 14px 0 0 var(--font_color);
 }
 
 .letter-e > .arm_serif_mid2:before {
     top: 0;
     right: 16%;
-    box-shadow: 14px -14px 0 0 black;
+    box-shadow: 14px -14px 0 0 var(--font_color);
 }
 
 
@@ -452,7 +465,7 @@
     width: 56%;
     height: 4%;
     transform: skew(-30deg);
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-e > .arm:before {
@@ -463,7 +476,7 @@
     width: 76%;
     height: 80%;
     transform: skew(30deg);
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-e > .arm:after {
@@ -474,7 +487,7 @@
     width: 100%;
     height: 100%;
     transform: skew(60deg);
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 
@@ -490,7 +503,7 @@
     left: 18%;
     width: 10%;
     height: 84%;
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-f > .serif,
@@ -562,17 +575,17 @@
 .letter-f > .serif:before{
     top: 16%;
     right: 0;
-    box-shadow: 10px -20px 0 0 black;
+    box-shadow: 10px -20px 0 0 var(--font_color);
 }
 .letter-f > .serif2:before {
     bottom: 16%;
     right: 0;
-    box-shadow: 10px 20px 0 0 black;
+    box-shadow: 10px 20px 0 0 var(--font_color);
 }
 .letter-f > .serif3:before {
     bottom: 16%;
     left: 0;
-    box-shadow: -10px 20px 0 0 black;
+    box-shadow: -10px 20px 0 0 var(--font_color);
 }
 
 
@@ -580,19 +593,19 @@
 .letter-f > .arm_serif_top:before {
     top: 0;
     right: 16%;
-    box-shadow: 14px -14px 0 0 black;
+    box-shadow: 14px -14px 0 0 var(--font_color);
 }
 
 .letter-f > .arm_serif_mid1:before {
     bottom: 0;
     right: 16%;
-    box-shadow: 14px 14px 0 0 black;
+    box-shadow: 14px 14px 0 0 var(--font_color);
 }
 
 .letter-f > .arm_serif_mid2:before {
     top: 0;
     right: 16%;
-    box-shadow: 14px -14px 0 0 black;
+    box-shadow: 14px -14px 0 0 var(--font_color);
 }
 
 
@@ -606,7 +619,7 @@
     width: 56%;
     height: 4%;
     transform: skew(-30deg);
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-f > .arm:before {
@@ -617,7 +630,7 @@
     width: 76%;
     height: 80%;
     transform: skew(30deg);
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 
@@ -634,7 +647,7 @@
     left: 10%;
     width: 80%;
     height: 84%;
-    background-color: black;
+    background-color: var(--font_color);
     border-radius: 100px/140px;
 }
 
@@ -643,7 +656,7 @@
     height: 96%;
     content: '';
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--negative_color);
     position: absolute;
     top: 50%;
     left: 46%;
@@ -655,7 +668,7 @@
     height: 28%;
     content: '';
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--negative_color);
     position: absolute;
     top: 33%;
     left: 82%;
@@ -671,7 +684,7 @@
     width: 47%;
     height: 4%;
     transform: skew(-10deg);
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 
@@ -700,7 +713,7 @@
 .letter-g > .arm_serif_top:before {
     top: 0;
     left: 16%;
-    box-shadow: -10px -10px 0 0 black;
+    box-shadow: -10px -10px 0 0 var(--font_color);
 }
 
 
@@ -719,7 +732,7 @@ Letter h */
     left: 18%;
     width: 10%;
     height: 84%;
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-h > .serif,
@@ -770,23 +783,23 @@ Letter h */
 .letter-h > .serif:before{
     top: 16%;
     right: 0;
-    box-shadow: 10px -20px 0 0 black;
+    box-shadow: 10px -20px 0 0 var(--font_color);
 }
 .letter-h > .serif2:before {
     bottom: 16%;
     right: 0;
-    box-shadow: 10px 20px 0 0 black;
+    box-shadow: 10px 20px 0 0 var(--font_color);
 }
 .letter-h > .serif3:before {
     bottom: 16%;
     left: 0;
-    box-shadow: -10px 20px 0 0 black;
+    box-shadow: -10px 20px 0 0 var(--font_color);
 }
 
 .letter-h > .serif4:before {
     top: 16%;
     left: 0;
-    box-shadow: -10px -20px 0 0 black;
+    box-shadow: -10px -20px 0 0 var(--font_color);
 }
 
 
@@ -798,7 +811,7 @@ Letter h */
     left: 72%;
     width: 10%;
     height: 84%;
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-h > .serif5,
@@ -849,23 +862,23 @@ Letter h */
 .letter-h > .serif5:before{
     top: 16%;
     right: 0;
-    box-shadow: 10px -20px 0 0 black;
+    box-shadow: 10px -20px 0 0 var(--font_color);
 }
 .letter-h > .serif6:before {
     bottom: 16%;
     right: 0;
-    box-shadow: 10px 20px 0 0 black;
+    box-shadow: 10px 20px 0 0 var(--font_color);
 }
 .letter-h > .serif7:before {
     bottom: 16%;
     left: 0;
-    box-shadow: -10px 20px 0 0 black;
+    box-shadow: -10px 20px 0 0 var(--font_color);
 }
 
 .letter-h > .serif8:before {
     top: 16%;
     left: 0;
-    box-shadow: -10px -20px 0 0 black;
+    box-shadow: -10px -20px 0 0 var(--font_color);
 }
 
 .letter-h > .arm {
@@ -875,7 +888,7 @@ Letter h */
     top: 46%;
     width: 60%;
     height: 3.5%;
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 
@@ -893,7 +906,7 @@ Letter I */
     left: 48%;
     width: 10%;
     height: 58%;
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-i > .serif,
@@ -944,23 +957,23 @@ Letter I */
 .letter-i > .serif:before{
     top: 16%;
     right: 0;
-    box-shadow: 10px -20px 0 0 black;
+    box-shadow: 10px -20px 0 0 var(--font_color);
 }
 .letter-i > .serif2:before {
     bottom: 16%;
     right: 0;
-    box-shadow: 10px 20px 0 0 black;
+    box-shadow: 10px 20px 0 0 var(--font_color);
 }
 .letter-i > .serif3:before {
     bottom: 16%;
     left: 0;
-    box-shadow: -10px 20px 0 0 black;
+    box-shadow: -10px 20px 0 0 var(--font_color);
 }
 
 .letter-i > .serif4:before {
     top: 16%;
     left: 0;
-    box-shadow: -10px -20px 0 0 black;
+    box-shadow: -10px -20px 0 0 var(--font_color);
 }
 
 
@@ -970,7 +983,7 @@ Letter I */
     height: 16%;
     left: 43%;
     top: 8%;
-    background-color: black;
+    background-color: var(--font_color);
     border-radius: 50%
 }
 
@@ -988,7 +1001,7 @@ Letter J */
     left: 20%;
     width: 60%;
     height: 84%;
-    background-color: black;
+    background-color: var(--font_color);
     border-radius: 100px/140px;
 }
 
@@ -997,7 +1010,7 @@ Letter J */
     height: 96%;
     content: '';
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--negative_color);
     position: absolute;
     top: 50%;
     left: 46%;
@@ -1009,7 +1022,7 @@ Letter J */
     height: 80%;
     content: '';
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--negative_color);
     position: absolute;
     top: -10%;
     left: -8%;
@@ -1024,7 +1037,7 @@ Letter J */
     left: 66.5%;
     width: 12.5%;
     height: 60%;
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 
@@ -1059,12 +1072,12 @@ Letter J */
 .letter-j > .serif:before{
     top: 16%;
     right: 0;
-    box-shadow: 10px -20px 0 0 black;
+    box-shadow: 10px -20px 0 0 var(--font_color);
 }
 .letter-j > .serif2:before {
     top: 16%;
     left: 0;
-    box-shadow: -10px -20px 0 0 black;
+    box-shadow: -10px -20px 0 0 var(--font_color);
 }
 
 
@@ -1088,7 +1101,7 @@ Letter K */
     left: 18%;
     width: 10%;
     height: 84%;
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-k > .serif,
@@ -1139,23 +1152,23 @@ Letter K */
 .letter-k > .serif:before{
     top: 16%;
     right: 0;
-    box-shadow: 10px -20px 0 0 black;
+    box-shadow: 10px -20px 0 0 var(--font_color);
 }
 .letter-k > .serif2:before {
     bottom: 16%;
     right: 0;
-    box-shadow: 10px 20px 0 0 black;
+    box-shadow: 10px 20px 0 0 var(--font_color);
 }
 .letter-k > .serif3:before {
     bottom: 16%;
     left: 0;
-    box-shadow: -10px 20px 0 0 black;
+    box-shadow: -10px 20px 0 0 var(--font_color);
 }
 
 .letter-k > .serif4:before {
     top: 16%;
     left: 0;
-    box-shadow: -10px -20px 0 0 black;
+    box-shadow: -10px -20px 0 0 var(--font_color);
 }
 
 
@@ -1167,7 +1180,7 @@ Letter K */
     left: 72%;
     width: 10%;
     height: 84%;
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-k > .serif5,
@@ -1184,6 +1197,7 @@ Letter K */
 
 .letter-k > .serif5 {
     top: 8%;
+    height: 8%;
 }
 
 .letter-k > .serif6 {
@@ -1198,6 +1212,7 @@ Letter K */
 .letter-k > .serif8 {
     top: 8%;
     left: 77%;
+    height: 8%;
 }
 
 
@@ -1218,46 +1233,1063 @@ Letter K */
 .letter-k > .serif5:before{
     top: 16%;
     right: 0;
-    box-shadow: 10px -20px 0 0 black;
+    box-shadow: 10px -20px 0 0 var(--font_color);
 }
 .letter-k > .serif6:before {
     bottom: 16%;
     right: 0;
-    box-shadow: 10px 20px 0 0 black;
+    box-shadow: 10px 20px 0 0 var(--font_color);
 }
 .letter-k > .serif7:before {
     bottom: 16%;
     left: 0;
-    box-shadow: -10px 20px 0 0 black;
+    box-shadow: -10px 20px 0 0 var(--font_color);
 }
 
 .letter-k > .serif8:before {
     top: 16%;
     left: 0;
-    box-shadow: -10px -20px 0 0 black;
+    box-shadow: -10px -20px 0 0 var(--font_color);
 }
 
 .letter-k > .arm {
     content: ' ';
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 48%;
     width: 12%;
     height: 40%;
     transform: skew(-50deg);
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-k > .arm::after {
     content: '';
     position: absolute;
-    left:440%;
+    left:450%;
     top: 86%;
     width: 120%;
-    height: 112%;
+    height: 118%;
     transform: skew(64deg) scaleY(-1) scaleY(-1);
-    background-color: black;
+    background-color: var(--font_color);
 }
+
+
+
+
+
+/* ///////////////////////////////////////////////////////
+
+letter L */
+
+
+
+.letter-l > .stroke {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 18%;
+    width: 10%;
+    height: 84%;
+    background-color: var(--font_color);
+}
+
+.letter-l > .serif,
+.letter-l > .serif2,
+.letter-l > .serif4{
+    content: "";
+    left: 8%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-l > .serif {
+    top: 8%;
+}
+
+.letter-l > .serif2 {
+    top: 82%;
+}
+
+.letter-l > .serif4 {
+    top: 8%;
+    left: 23%;
+}
+
+
+
+.letter-l > .serif:before,
+.letter-l > .serif2:before,
+.letter-l > .serif4:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-l > .serif:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+.letter-l > .serif2:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 10px 20px 0 0 var(--font_color);
+}
+
+.letter-l > .serif4:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 var(--font_color);
+}
+
+
+
+.letter-l > .bar {
+    content: ' ';
+    position: absolute;
+    top: 86%;
+    left: 20%;
+    width: 60%;
+    height: 6%;
+    background-color: var(--font_color);
+}
+
+
+.letter-l > .bar_serif_bot{
+    content: "";
+    left: 8%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-l > .bar_serif_bot {
+    top: 80%;
+    left: 69%;
+    width: 15%;
+    height: 12%;
+}
+
+.letter-l > .bar_serif_bot::before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.letter-l > .bar_serif_bot::before{
+    bottom: 0;
+    right: 16%;
+    box-shadow: 14px 14px 0 0 var(--font_color);
+}
+
+
+
+
+
+
+
+/* /////////////////////////////////////////
+
+Letter M */
+
+
+.letter-m > .stroke {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 21%;
+    width: 4%;
+    height: 84%;
+    background-color: var(--font_color);
+}
+
+.letter-m > .serif,
+.letter-m > .serif2,
+.letter-m > .serif3{
+    content: "";
+    left: 8%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-m > .serif {
+    top: 8%;
+}
+
+.letter-m > .serif2 {
+    top: 82%;
+}
+
+.letter-m > .serif3 {
+    top: 82%;
+    left: 23%;
+}
+
+
+
+
+.letter-m > .serif:before,
+.letter-m > .serif2:before,
+.letter-m > .serif3:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-m > .serif:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+.letter-m > .serif2:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 10px 20px 0 0 var(--font_color);
+}
+.letter-m > .serif3:before {
+    bottom: 16%;
+    left: 0;
+    box-shadow: -10px 20px 0 0 var(--font_color);
+}
+
+
+
+
+.letter-m > .stroke2 {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 72%;
+    width: 10%;
+    height: 84%;
+    background-color: var(--font_color);
+}
+
+
+.letter-m > .serif6,
+.letter-m > .serif7,
+.letter-m > .serif8{
+    content: "";
+    left: 62%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+
+.letter-m > .serif6 {
+    top: 82%;
+}
+
+.letter-m > .serif7 {
+    top: 82%;
+    left: 77%;
+}
+
+.letter-m > .serif8 {
+    top: 8%;
+    left: 77%;
+}
+
+
+
+.letter-m > .serif6:before,
+.letter-m > .serif7:before,
+.letter-m > .serif8:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+
+.letter-m > .serif6:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 10px 20px 0 0 var(--font_color);
+}
+.letter-m > .serif7:before {
+    bottom: 16%;
+    left: 0;
+    box-shadow: -10px 20px 0 0 var(--font_color);
+}
+
+.letter-m > .serif8:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 var(--font_color);
+}
+
+.letter-m > .arm {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 32%;
+    width: 10%;
+    height: 50%;
+    transform: skew(20deg);
+    background-color: var(--font_color);
+}
+
+.letter-m > .arm:after {
+    content: ' ';
+    position: absolute;
+    top: 0%;
+    left: 280%;
+    width: 50%;
+    height: 100%;
+    transform: skew(-36deg);
+    background-color: var(--font_color);
+}
+
+
+
+
+
+
+/* /////////////////////////////////////////
+
+Letter n */
+
+
+.letter-n > .stroke {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 21%;
+    width: 4%;
+    height: 84%;
+    background-color: var(--font_color);
+}
+
+.letter-n > .serif,
+.letter-n > .serif2,
+.letter-n > .serif3{
+    content: "";
+    left: 8%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-n > .serif {
+    top: 8%;
+}
+
+.letter-n > .serif2 {
+    top: 82%;
+}
+
+.letter-n > .serif3 {
+    top: 82%;
+    left: 23%;
+}
+
+
+
+.letter-n > .serif:before,
+.letter-n > .serif2:before,
+.letter-n > .serif3:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-n > .serif:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+.letter-n > .serif2:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 10px 20px 0 0 var(--font_color);
+}
+.letter-n > .serif3:before {
+    bottom: 16%;
+    left: 0;
+    box-shadow: -10px 20px 0 0 var(--font_color);
+}
+
+
+.letter-n > .stroke2 {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 75%;
+    width: 4%;
+    height: 84%;
+    background-color: var(--font_color);
+}
+
+.letter-n > .serif5,
+.letter-n > .serif8{
+    content: "";
+    left: 62%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-n > .serif5 {
+    top: 8%;
+}
+
+
+.letter-n > .serif8 {
+    top: 8%;
+    left: 77%;
+}
+
+
+
+.letter-n > .serif5:before,
+.letter-n > .serif8:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-n > .serif5:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+
+.letter-n > .serif8:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 var(--font_color);
+}
+
+
+
+.letter-n > .arm {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 45%;
+    width: 10%;
+    height: 84%;
+    transform: skew(24deg);
+    background-color: var(--font_color);
+}
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////// */
+
+/* Letter O */
+
+.letter-o > .counter {
+    content: "";
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    width: 80%;
+    height: 84%;
+    background-color: var(--font_color);
+    border-radius: 100px/140px;
+}
+
+.letter-o > .counter:before {
+    width: 70%;
+    height: 96%;
+    content: '';
+    border-radius: 50%;
+    background-color: var(--negative_color);
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+/* /////////////////////////////////////////
+
+Letter p */
+
+
+.letter-p > .stroke {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 21%;
+    width: 10%;
+    height: 84%;
+    background-color: var(--font_color);
+}
+
+.letter-p > .serif,
+.letter-p > .serif2,
+.letter-p > .serif3{
+    content: "";
+    left: 12%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-p > .serif {
+    top: 8%;
+}
+
+.letter-p > .serif2 {
+    top: 82%;
+}
+
+.letter-p > .serif3 {
+    top: 82%;
+    left: 26%;
+}
+
+
+
+.letter-p > .serif:before,
+.letter-p > .serif2:before,
+.letter-p > .serif3:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-p > .serif:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+.letter-p > .serif2:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 10px 20px 0 0 var(--font_color);
+}
+.letter-p > .serif3:before {
+    bottom: 16%;
+    left: 0;
+    box-shadow: -10px 20px 0 0 var(--font_color);
+}
+
+
+
+.letter-p > .oval {
+    content: "";
+    position: absolute;
+    top: 8%;
+    left: 28%;
+    width: 56%;
+    height: 46%;
+    background-color: var(--font_color);
+    border-radius: 0px 80px 80px 0px;
+}
+
+.letter-p > .oval:after{
+    content: " ";
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 75%;
+    height: 90%;
+    border-radius:0px 70px 70px 0px;
+    background-color: var(--negative_color);
+}
+
+
+
+
+
+/* //////////////////////////////////////////////////////// */
+
+/* Letter O */
+
+.letter-q > .counter {
+    content: "";
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    width: 80%;
+    height: 72%;
+    background-color: var(--font_color);
+    border-radius: 100px/140px;
+}
+
+.letter-q > .counter:before {
+    width: 70%;
+    height: 90%;
+    content: '';
+    border-radius: 50%;
+    background-color: var(--negative_color);
+    position: absolute;
+    top: 47%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+
+.letter-q > .oval2 {
+    content: "";
+    position: absolute;
+    top: 78%;
+    left: -14%;
+    width: 100%;
+    height: 40%;
+    background-color: var(--font_color);
+    border-radius: 0px 100px 100px 0px;
+    z-index: -1;
+}
+
+.letter-q > .oval2:before{
+    content: " ";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 86%;
+    height: 90%;
+    border-radius:0px 100px 100px 0px;
+    background-color: var(--negative_color);
+}
+
+.letter-q > .oval2:after{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 120%;
+    height: 90%;
+    border-radius:0px 0px 0px 0px;
+    background-color: var(--negative_color);
+}
+
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////////
+
+Letter r */
+
+
+.letter-r > .stroke {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 21%;
+    width: 10%;
+    height: 84%;
+    background-color: var(--font_color);
+}
+
+.letter-r > .serif,
+.letter-r > .serif2,
+.letter-r > .serif3{
+    content: "";
+    left: 12%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-r > .serif {
+    top: 8%;
+}
+
+.letter-r > .serif2 {
+    top: 82%;
+}
+
+.letter-r > .serif3 {
+    top: 82%;
+    left: 26%;
+}
+
+
+
+.letter-r > .serif:before,
+.letter-r > .serif2:before,
+.letter-r > .serif3:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-r > .serif:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+.letter-r > .serif2:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 10px 20px 0 0 var(--font_color);
+}
+.letter-r > .serif3:before {
+    bottom: 16%;
+    left: 0;
+    box-shadow: -10px 20px 0 0 var(--font_color);
+}
+
+
+
+.letter-r > .oval {
+    content: "";
+    position: absolute;
+    top: 8%;
+    left: 28%;
+    width: 56%;
+    height: 40%;
+    background-color: var(--font_color);
+    border-radius: 0px 80px 80px 0px;
+}
+
+.letter-r > .oval:after{
+    content: " ";
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 75%;
+    height: 90%;
+    border-radius:0px 70px 70px 0px;
+    background-color: var(--negative_color);
+}
+
+.letter-r > .oval2 {
+    content: "";
+    position: absolute;
+    top: 46%;
+    left: 24%;
+    width: 58%;
+    height: 90%;
+    background-color: var(--font_color);
+    border-radius: 0px 80px 80px 0px;
+    z-index: -1;
+}
+
+.letter-r > .oval2:before{
+    content: " ";
+    position: absolute;
+    top: 4%;
+    left: 12%;
+    width: 70%;
+    height: 90%;
+    border-radius:0px 70px 70px 0px;
+    background-color: var(--negative_color);
+}
+
+.letter-r > .oval2:after{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 120%;
+    height: 90%;
+    border-radius:0px 0px 0px 0px;
+    background-color: var(--negative_color);
+}
+
+
+
+
+.letter-r > .serif6,
+.letter-r > .serif7{
+    content: "";
+    left: 62%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+
+.letter-r > .serif6 {
+    top: 82%;
+}
+
+.letter-r > .serif7 {
+    top: 82%;
+    left: 77%;
+}
+
+
+.letter-r > .serif6:before,
+.letter-r > .serif7:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+
+.letter-r > .serif6:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 10px 20px 0 0 var(--font_color);
+}
+.letter-r > .serif7:before {
+    bottom: 16%;
+    left: 0;
+    box-shadow: -10px 20px 0 0 var(--font_color);
+}
+
+
+
+
+
+/* 
+////////////////////////////////////////
+
+letter S   */
+
+
+.letter-s > .spine{
+    content: "";
+    position: absolute;
+    top: 8%;
+    left: 12%;
+    width: 76%;
+    height: 46%;
+    background-color: var(--font_color);
+    border-radius: 100px 100px 0px 80px;
+    z-index: -1;
+}
+
+.letter-s > .spine::before{
+    content: " ";
+    position: absolute;
+    top: 4%;
+    left: 14%;
+    width: 78%;
+    height: 74%;
+    border-radius: 100px 100px 0px 80px;
+    background-color: var(--negative_color);
+}
+
+.letter-s > .spine::after{
+    content: " ";
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 76%;
+    height: 80%;
+    border-radius: 0px 0px 0px 0px;
+    background-color: var(--negative_color);
+}
+
+.letter-s > .spine_bottom{
+    content: "";
+    position: absolute;
+    top: 43.5%;
+    left: 12%;
+    width: 76%;
+    height: 48%;
+    background-color: var(--font_color);
+    border-radius: 100px 100px 100px 100px;
+    z-index: -1;
+}
+
+.letter-s > .spine_bottom::before{
+    content: " ";
+    position: absolute;
+    top: 18%;
+    left: 8%;
+    width: 74%;
+    height: 74%;
+    border-radius: 100px 100px 100px 80px;
+    background-color: var(--negative_color);
+}
+
+
+.letter-s > .spine_bottom::after{
+    content: " ";
+    position: absolute;
+    top: 18%;
+    left: -20%;
+    width: 76%;
+    height: 56%;
+    border-radius: 0px 0px 0px 0px;
+    background-color: var(--negative_color);
+}
+
+
+.letter-s > .serif1{
+    content: "";
+    left: 16.5%;
+    top: 45%;
+    width: 20%;
+    height: 9%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.letter-s > .serif1:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 20%;
+    left: 0;
+    box-shadow: -10px 20px 0 0 var(--negative_color);
+}
+
+
+
+.letter-s > .bar_serif{
+    content: "";
+    top: 10%;
+    left: 79%;
+    width: 7%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.letter-s > .bar_serif:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    right: 30%;
+    box-shadow: 20px 20px 0 0 var(--font_color);
+}
+
+.letter-s > .bar_serif2{
+    content: "";
+    top: 18%;
+    left: 79%;
+    width: 7%;
+    height: 12%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.letter-s > .bar_serif2:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 90%;
+    top: 0;
+    right: 60%;
+    box-shadow: 20px -20px 0 0 var(--font_color);
+}
+
+
+.letter-s > .bar_serif3{
+    content: "";
+    top: 68%;
+    left: 13%;
+    width: 6%;
+    height: 12%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.letter-s > .bar_serif3:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    left: 50%;
+    box-shadow: -20px 20px 0 0 var(--font_color);
+}
+
+.letter-s > .bar_serif4{
+    content: "";
+    top: 80%;
+    left: 13%;
+    width: 6%;
+    height: 12%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.letter-s > .bar_serif4:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 50%;
+    box-shadow: -20px -20px 0 0 var(--font_color);
+}
+
+
+
+
+
+
+
 
 
 
@@ -1273,10 +2305,10 @@ Letter T */
     content: ' ';
     position: absolute;
     top: 8%;
-    left: 42.5%;
-    width: 15%;
+    left: 44%;
+    width: 12%;
     height: 80%;
-    background-color: black;
+    background-color: var(--font_color);
 }
 
 .letter-t > .bar {
@@ -1285,8 +2317,8 @@ Letter T */
     top: 8%;
     left: 10%;
     width: 80%;
-    height: 6%;
-    background-color: black;
+    height: 4%;
+    background-color: var(--font_color);
 }
 
 .letter-t > .serif,
@@ -1300,28 +2332,28 @@ Letter T */
 
 .letter-t > .serif,
 .letter-t > .serif4{
-    width: 25%;
-    height: 12%;
+    width: 20%;
+    height: 8%;
     top: 10%;
 }
 
 .letter-t > .serif2,
 .letter-t > .serif3{
-    width: 25%;
-    height: 20%;
-    top: 72%;
+    width: 20%;
+    height: 14%;
+    top: 78%;
 }
 
 .letter-t > .serif {
-    left: 20%;
-}
-
-.letter-t > .serif2 {
     left: 25%;
 }
 
+.letter-t > .serif2 {
+    left: 29.5%;
+}
+
 .letter-t > .serif3 {
-    left: 50%;
+    left: 49.5%;
 }
 
 .letter-t > .serif4 {
@@ -1346,23 +2378,23 @@ Letter T */
 .letter-t > .serif:before{
     top: 16%;
     right: 0;
-    box-shadow: 10px -20px 0 0 black;
+    box-shadow: 10px -20px 0 0 var(--font_color);
 }
 .letter-t > .serif2:before {
     bottom: 16%;
     right: 0;
-    box-shadow: 30px 20px 0 0 black;
+    box-shadow: 30px 20px 0 0 var(--font_color);
 }
 .letter-t > .serif3:before {
     bottom: 16%;
     left: 0;
-    box-shadow: -30px 20px 0 0 black;
+    box-shadow: -30px 20px 0 0 var(--font_color);
 }
 
 .letter-t > .serif4:before {
     top: 16%;
     left: 0;
-    box-shadow: -10px -20px 0 0 black;
+    box-shadow: -10px -20px 0 0 var(--font_color);
 }
 
 
@@ -1371,10 +2403,10 @@ Letter T */
 
 .letter-t > .bar_serif{
     content: "";
-    top: 10%;
+    top: 8%;
     left: 65%;
-    width: 25%;
-    height: 12%;
+    width: 28%;
+    height: 14%;
     overflow: hidden;
     position: absolute;
 }
@@ -1388,17 +2420,17 @@ Letter T */
     position: absolute;
     border-radius: 50%;
     top: 0;
-    right: 16%;
-    box-shadow: 14px -14px 0 0 black;
+    right: 8%;
+    box-shadow: 20px -20px 0 0 var(--font_color);
 }
 
 
 .letter-t > .bar_serif2{
     content: "";
-    top: 10%;
+    top: 8%;
     left: 10%;
-    width: 25%;
-    height: 12%;
+    width: 28%;
+    height: 14%;
     overflow: hidden;
     position: absolute;
 }
@@ -1412,17 +2444,179 @@ Letter T */
     position: absolute;
     border-radius: 50%;
     top: 0;
-    left: 16%;
-    box-shadow: -14px -14px 0 0 black;
+    left: 8%;
+    box-shadow: -20px -20px 0 0 var(--font_color);
 }
 
 
 
 
-.letter-t > .bling_topleft,
-.letter-t > .bling_topright,
-.letter-t > .bling_botleft,
-.letter-t > .bling_botright{
+
+
+
+
+
+
+/* 
+///////////////////////////////////////////
+
+Letter T special */
+
+
+.letter-t_special > .stroke {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 42.5%;
+    width: 15%;
+    height: 80%;
+    background-color: var(--font_color);
+}
+
+.letter-t_special > .bar {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    width: 80%;
+    height: 6%;
+    background-color: var(--font_color);
+}
+
+.letter-t_special > .serif,
+.letter-t_special > .serif2,
+.letter-t_special > .serif3,
+.letter-t_special > .serif4{
+    content: "";
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-t_special > .serif,
+.letter-t_special > .serif4{
+    width: 25%;
+    height: 12%;
+    top: 10%;
+}
+
+.letter-t_special > .serif2,
+.letter-t_special > .serif3{
+    width: 25%;
+    height: 20%;
+    top: 72%;
+}
+
+.letter-t_special > .serif {
+    left: 20%;
+}
+
+.letter-t_special > .serif2 {
+    left: 25%;
+}
+
+.letter-t_special > .serif3 {
+    left: 50%;
+}
+
+.letter-t_special > .serif4 {
+    left: 55%;
+}
+
+
+
+.letter-t_special > .serif:before,
+.letter-t_special > .serif2:before,
+.letter-t_special > .serif3:before,
+.letter-t_special > .serif4:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-t_special > .serif:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+.letter-t_special > .serif2:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 30px 20px 0 0 var(--font_color);
+}
+.letter-t_special > .serif3:before {
+    bottom: 16%;
+    left: 0;
+    box-shadow: -30px 20px 0 0 var(--font_color);
+}
+
+.letter-t_special > .serif4:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 var(--font_color);
+}
+
+
+
+
+
+.letter-t_special > .bar_serif{
+    content: "";
+    top: 10%;
+    left: 65%;
+    width: 25%;
+    height: 12%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.letter-t_special > .bar_serif:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    right: 16%;
+    box-shadow: 14px -14px 0 0 var(--font_color);
+}
+
+
+.letter-t_special > .bar_serif2{
+    content: "";
+    top: 10%;
+    left: 10%;
+    width: 25%;
+    height: 12%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.letter-t_special > .bar_serif2:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 16%;
+    box-shadow: -14px -14px 0 0 var(--font_color);
+}
+
+
+
+
+.letter-t_special > .bling_topleft,
+.letter-t_special > .bling_topright,
+.letter-t_special > .bling_botleft,
+.letter-t_special > .bling_botright{
     content: "";
     top: 43%;
     left: 16%;
@@ -1433,26 +2627,26 @@ Letter T */
     transform: rotate(-20deg);
 }
 
-.letter-t > .bling_botright{
+.letter-t_special > .bling_botright{
     top: 40%;
     left: 26%;
 }
 
-.letter-t > .bling_topleft{
+.letter-t_special > .bling_topleft{
     top: 32%;
     left: 12%;
 }
 
-.letter-t > .bling_topright{
+.letter-t_special > .bling_topright{
     top: 29%;
     left: 22%;
 }
 
 
-.letter-t > .bling_topleft:before,
-.letter-t > .bling_topright:before,
-.letter-t > .bling_botleft:before,
-.letter-t > .bling_botright:before {
+.letter-t_special > .bling_topleft:before,
+.letter-t_special > .bling_topright:before,
+.letter-t_special > .bling_botleft:before,
+.letter-t_special > .bling_botright:before {
     content: "";
     display: block;
     width: 200%;
@@ -1461,29 +2655,799 @@ Letter T */
     border-radius: 50%;
 }
 
-.letter-t > .bling_topleft:before {
+.letter-t_special > .bling_topleft:before {
     bottom: 0;
     right: 16%;
-    box-shadow: 14px 14px 0 0 black;
+    box-shadow: 14px 14px 0 0 var(--font_color);
 }
 
-.letter-t > .bling_topright:before {
+.letter-t_special > .bling_topright:before {
     bottom: 0;
     left: 16%;
-    box-shadow: -14px 14px 0 0 black;
+    box-shadow: -14px 14px 0 0 var(--font_color);
 }
 
-.letter-t > .bling_botleft:before {
+.letter-t_special > .bling_botleft:before {
     top: 0;
     right: 16%;
-    box-shadow: 14px -14px 0 0 black;
+    box-shadow: 14px -14px 0 0 var(--font_color);
 }
 
-.letter-t > .bling_botright:before {
+.letter-t_special > .bling_botright:before {
     top: 0;
     left: 16%;
-    box-shadow: -14px -14px 0 0 black;
+    box-shadow: -14px -14px 0 0 var(--font_color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////
+
+letter u      */
+
+
+.letter-u > .oval {
+    content: "";
+    position: absolute;
+    top: 8%;
+    left: 17%;
+    width: 64%;
+    height: 84%;
+    background-color: var(--font_color);
+    border-radius: 0px 0px 140px 140px;
+}
+
+.letter-u > .oval:before {
+    width: 74%;
+    height: 100%;
+    content: '';
+    border-radius: 0px 0px 140px 140px;
+    background-color: var(--negative_color);
+    position: absolute;
+    top: 48%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.letter-u > .serif,
+.letter-u > .serif4,
+.letter-u > .serif5,
+.letter-u > .serif8{
+    content: "";
+    left: 8%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+    
+}
+
+.letter-u > .serif {
+    top: 8%;
+}
+
+.letter-u > .serif4 {
+    top: 8%;
+    left: 23%;
+}
+
+.letter-u > .serif5 {
+    top: 8%;
+    left: 62%;
+}
+
+.letter-u > .serif8 {
+    top: 8%;
+    left: 77%;
+}
+
+
+.letter-u > .serif:before,
+.letter-u > .serif4:before,
+.letter-u > .serif5:before,
+.letter-u > .serif8:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-u > .serif:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+
+.letter-u > .serif4:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 var(--font_color);
+}
+
+.letter-u > .serif5:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+
+.letter-u > .serif8:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 var(--font_color);
+}
+
+
+
+
+
+/* ////////////////////////////
+
+letter v */
+
+.letter-v > .stroke {
+    content: ' ';
+    position: absolute;
+    top: 10%;
+    left: 29%;
+    width: 12%;
+    height: 80%;
+    transform: skew(14deg);
+    background-color: var(--font_color);
+}
+
+
+.letter-v > .stroke:after {
+    content: '';
+    position: absolute;
+    left:280%;
+    width: 40%;
+    height: 100%;
+    transform: skew(-28deg);
+    background-color: var(--font_color);
+}
+
+
+.letter-v > .serif,
+.letter-v > .serif4,
+.letter-v > .serif5,
+.letter-v > .serif8{
+    content: "";
+    left: 8%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+    
+}
+
+.letter-v > .serif {
+    top: 8%;
+}
+
+.letter-v > .serif4 {
+    top: 8%;
+    left: 23%;
+}
+
+.letter-v > .serif5 {
+    top: 8%;
+    left: 62%;
+}
+
+.letter-v > .serif8 {
+    top: 8%;
+    left: 77%;
+}
+
+
+.letter-v > .serif:before,
+.letter-v > .serif4:before,
+.letter-v > .serif5:before,
+.letter-v > .serif8:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-v > .serif:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+
+.letter-v > .serif4:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 var(--font_color);
+}
+
+.letter-v > .serif5:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+
+.letter-v > .serif8:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 var(--font_color);
+}
+
+
+
+
+
+
+
+
+/* ////////////////////////////
+
+letter w */
+
+.letter-w > .stroke {
+    content: ' ';
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 10%;
+    height: 80%;
+    transform: skew(7deg);
+    background-color: var(--font_color);
+}
+
+
+.letter-w > .stroke:after {
+    content: '';
+    position: absolute;
+    left:190%;
+    width: 40%;
+    height: 100%;
+    transform: skew(-14deg);
+    background-color: var(--font_color);
+}
+
+.letter-w > .stroke2 {
+    content: ' ';
+    position: absolute;
+    top: 10%;
+    left: 52%;
+    width: 10%;
+    height: 80%;
+    transform: skew(7deg);
+    background-color: var(--font_color);
+}
+
+
+.letter-w > .stroke2:after {
+    content: '';
+    position: absolute;
+    left:190%;
+    width: 40%;
+    height: 100%;
+    transform: skew(-14deg);
+    background-color: var(--font_color);
+}
+
+
+.letter-w > .serif,
+.letter-w > .serif4,
+.letter-w > .serif5,
+.letter-w > .serif8{
+    content: "";
+    left: 8%;
+    width: 12%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+    
+}
+
+.letter-w > .serif {
+    top: 8%;
+}
+
+.letter-w > .serif4 {
+    top: 8%;
+    left: 20%;
+}
+
+.letter-w > .serif5 {
+    top: 8%;
+    left: 65%;
+}
+
+.letter-w > .serif8 {
+    top: 8%;
+    left: 77%;
+}
+
+
+.letter-w > .serif:before,
+.letter-w > .serif4:before,
+.letter-w > .serif5:before,
+.letter-w > .serif8:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-w > .serif:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+
+.letter-w > .serif4:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 var(--font_color);
+}
+
+.letter-w > .serif5:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+
+.letter-w > .serif8:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 var(--font_color);
+}
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////
+
+letter x  */
+
+
+.letter-x > .stroke {
+    content: ' ';
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    width: 10%;
+    height: 80%;
+    transform: skew(30deg);
+    background-color: var(--font_color);
+}
+
+
+.letter-x > .stroke:after {
+    content: '';
+    position: absolute;
+    left:24%;
+    width: 60%;
+    height: 100%;
+    transform: skew(-50deg);
+    background-color: var(--font_color);
+}
+
+.letter-x > .serif,
+.letter-x > .serif2,
+.letter-x > .serif3,
+.letter-x > .serif4{
+    content: "";
+    left: 8%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-x > .serif {
+    top: 8%;
+}
+
+.letter-x > .serif2 {
+    top: 82%;
+}
+
+.letter-x > .serif3 {
+    top: 82%;
+    left: 23%;
+}
+
+.letter-x > .serif4 {
+    top: 8%;
+    left: 23%;
+}
+
+
+
+.letter-x > .serif:before,
+.letter-x > .serif2:before,
+.letter-x > .serif3:before,
+.letter-x > .serif4:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-x > .serif:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+.letter-x > .serif2:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 10px 20px 0 0 var(--font_color);
+}
+.letter-x > .serif3:before {
+    bottom: 16%;
+    left: 0;
+    box-shadow: -10px 20px 0 0 var(--font_color);
+}
+
+.letter-x > .serif4:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 var(--font_color);
+}
+
+
+
+
+.letter-x > .serif5,
+.letter-x > .serif6,
+.letter-x > .serif7,
+.letter-x > .serif8{
+    content: "";
+    left: 62%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-x > .serif5 {
+    top: 8%;
+}
+
+.letter-x > .serif6 {
+    top: 82%;
+}
+
+.letter-x > .serif7 {
+    top: 82%;
+    left: 77%;
+}
+
+.letter-x > .serif8 {
+    top: 8%;
+    left: 77%;
+}
+
+
+
+.letter-x > .serif5:before,
+.letter-x > .serif6:before,
+.letter-x > .serif7:before,
+.letter-x > .serif8:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-x > .serif5:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+.letter-x > .serif6:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 10px 20px 0 0 var(--font_color);
+}
+.letter-x > .serif7:before {
+    bottom: 16%;
+    left: 0;
+    box-shadow: -10px 20px 0 0 var(--font_color);
+}
+
+.letter-x > .serif8:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 var(--font_color);
+}
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////
+
+letter y  */
+
+
+.letter-y > .stroke {
+    content: ' ';
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 10%;
+    height: 40%;
+    transform: skew(30deg);
+    background-color: var(--font_color);
+}
+
+.letter-y > .stroke:before {
+    content: '';
+    position: absolute;
+    left: 340%;
+    width: 60%;
+    height: 100%;
+    transform: skew(-50deg);
+    background-color: var(--font_color);
+}
+
+.letter-y > .stroke:after {
+    content: '';
+    position: absolute;
+    left: -140%;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transform: skew(-30deg);
+    background-color: var(--font_color);
+}
+
+.letter-y > .serif,
+.letter-y > .serif2,
+.letter-y > .serif3,
+.letter-y > .serif4{
+    content: "";
+    left: 8%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-y > .serif {
+    top: 8%;
+}
+
+.letter-y > .serif2 {
+    top: 82%;
+    left: 35%;
+}
+
+.letter-y > .serif3 {
+    top: 82%;
+    left: 50%;
+}
+
+.letter-y > .serif4 {
+    top: 8%;
+    left: 23%;
+}
+
+
+
+.letter-y > .serif:before,
+.letter-y > .serif2:before,
+.letter-y > .serif3:before,
+.letter-y > .serif4:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-y > .serif:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+.letter-y > .serif2:before {
+    bottom: 16%;
+    right: 0;
+    box-shadow: 10px 20px 0 0 var(--font_color);
+}
+.letter-y > .serif3:before {
+    bottom: 16%;
+    left: 0;
+    box-shadow: -10px 20px 0 0 var(--font_color);
+}
+
+.letter-y > .serif4:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 var(--font_color);
+}
+
+
+
+
+.letter-y > .serif5,
+.letter-y > .serif8{
+    content: "";
+    left: 62%;
+    width: 15%;
+    height: 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-y > .serif5 {
+    top: 8%;
+}
+
+
+.letter-y > .serif8 {
+    top: 8%;
+    left: 77%;
+}
+
+
+.letter-y > .serif5:before,
+.letter-y > .serif8:before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.letter-y > .serif5:before{
+    top: 16%;
+    right: 0;
+    box-shadow: 10px -20px 0 0 var(--font_color);
+}
+
+
+.letter-y > .serif8:before {
+    top: 16%;
+    left: 0;
+    box-shadow: -10px -20px 0 0 var(--font_color);
+}
+
+
+
+
+
+
+/* 
+////////////////////////////////
+ 
+letter z */
+
+
+
+.letter-z > .stroke {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 43%;
+    width: 14%;
+    height: 80%;
+    transform: skew(-32deg);
+    background-color: var(--font_color);
+}
+
+.letter-z > .stroke:before {
+    content: '';
+    position: absolute;
+    left: -215.5%;
+    top: -32%;
+    width: 42%;
+    height: 70%;
+    transform: skew(32deg) rotate(90deg);
+    background-color: var(--font_color);
+}
+
+
+.letter-z > .stroke:after {
+    content: '';
+    position: absolute;
+    left: 254%;
+    top: 65%;
+    width: 40%;
+    height: 74%;
+    transform: skew(32deg) rotate(90deg);
+    background-color: var(--font_color);
+}
+
+
+
+.letter-z > .bar_serif{
+    content: "";
+    top: 80%;
+    left: 64%;
+    width: 25%;
+    height: 12%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.letter-z > .bar_serif:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    right: 10%;
+    box-shadow: 20px 20px 0 0 var(--font_color);
+}
+
+
+.letter-z > .bar_serif2{
+    content: "";
+    top: 10%;
+    left: 10.5%;
+    width: 25%;
+    height: 12%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.letter-z > .bar_serif2:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 10%;
+    box-shadow: -20px -20px 0 0 var(--font_color);
+}
+
 
 
 
@@ -1556,18 +3520,18 @@ Letter T */
 .letter-t > .serif2:before {
     bottom: 16%;
     right: 0;
-    box-shadow: 10px 20px 0 0 black;
+    box-shadow: 10px 20px 0 0 var(--font_color);
 }
 .letter-t > .serif3:before {
     bottom: 16%;
     left: 0;
-    box-shadow: -10px 20px 0 0 black;
+    box-shadow: -10px 20px 0 0 var(--font_color);
 }
 
 .letter-t > .serif4:before {
     top: 16%;
     left: 0;
-    box-shadow: -10px -20px 0 0 black;
+    box-shadow: -10px -20px 0 0 var(--font_color);
 }
  */
 
@@ -1629,7 +3593,7 @@ so these lines are disposed
     left: 63%;
     width: 30%;
     height: 2%;
-    background-color: black;
+    background-color: var(--font_color);
 } */
 
 
@@ -1642,7 +3606,7 @@ This allows for the central part to be transparent
 But after testing, this no longer allows for enlarge or decrease of the div
 to edit the font size. 
 Because boxshadow can not be used with percentage units
-So eventually I still decided to fill the center with white... 
+So eventually I still decided to fill the center with var(--negative_color)... 
 I think be able to change the size is more important for future use.. 
 
 
@@ -1653,7 +3617,7 @@ I think be able to change the size is more important for future use..
     left: 10%;
     width: 80%;
     height: 84%;
-    background-color: white;
+    background-color: var(--negative_color);
     border-radius: 100px/140px;
 }
 
@@ -1667,7 +3631,7 @@ I think be able to change the size is more important for future use..
     top: 50%;
     left: 46%;
     transform: translate(-50%, -50%);
-    box-shadow: 8px 0px 0px 12px black;
+    box-shadow: 8px 0px 0px 12px var(--font_color);
 }
 
 .letter-c > .counter:after {
@@ -1675,7 +3639,7 @@ I think be able to change the size is more important for future use..
     height: 60%;
     content: '';
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--negative_color);
     position: absolute;
     top: 50%;
     left: 80%;
